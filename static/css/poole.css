@@ -251,6 +251,26 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+/* Docutils footnotes */
+p a.footnote-reference {
+  font-size: 60%;
+  position: relative;
+  top: -.5em;
+}
+table.docutils.footnote {
+  border: none;
+}
+table.docutils.footnote td,
+table.docutils.footnote th {
+  border: none;
+  background-color: #fff;
+  font-size: .75rem;
+}
+table.docutils.footnote td.label,
+table.docutils.footnote th.label {
+  width: .25rem;
+}
+
 
 /*
  * Custom type
