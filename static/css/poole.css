@@ -149,10 +149,12 @@ abbr[title] {
 
 /* Code */
 code,
-pre {
+pre,
+tt {
   font-family: Menlo, Monaco, Consolas, Inconsolata, "Courier New", monospace;
 }
-code {
+code,
+tt {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
