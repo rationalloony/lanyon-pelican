@@ -1,0 +1,20 @@
+<p class="meta">
+  {% if article.tags %}
+    <span>
+      Tagged with
+      <span class="categories">
+        {% for tag in article.tags %}
+        <a class="category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+        {% if not loop.last %},{% else %} <br> {% endif %}
+        {% endfor %}
+      </span>
+    </span>
+  {% endif %}
+    <span>
+      Posted in Category
+      <span class="categories">
+        <a class='category' href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a><br>
+      </span>
+    </span>
+</p>
+  

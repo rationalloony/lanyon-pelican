@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block title %}{{ SITENAME }} - Tags{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
 
 {% block content %}
     <h1>Tags for {{ SITENAME }}</h1>
